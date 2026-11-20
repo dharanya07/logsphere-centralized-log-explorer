@@ -1,0 +1,31 @@
+@'
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+dist/
+build/
+
+# Local data
+backend/logs.db
+backend/logs.json
+logs/
+application_logs.txt
+csv_test.csv
+test_logs.txt
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Set-Content .gitignore

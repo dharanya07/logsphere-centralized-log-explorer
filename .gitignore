@@ -1,0 +1,29 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+build/
+
+# Local data
+backend/logs.db
+backend/logs.json
+logs/
+application_logs.txt
+csv_test.csv
+test_logs.txt
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

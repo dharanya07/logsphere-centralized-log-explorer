@@ -1,0 +1,19 @@
+
+services:
+  backend:
+    build: ./backend
+    container_name: logsphere-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/logs.json:/app/logs.json
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: logsphere-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
