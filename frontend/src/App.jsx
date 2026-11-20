@@ -15,7 +15,9 @@ import {
 } from "recharts";
 import "./App.css";
 
-const API = "";
+const API =
+  import.meta.env.VITE_API_URL ||
+  "https://logsphere-backend-44qa.onrender.com";
 
 const styles = `
 * {
@@ -1582,7 +1584,7 @@ function App() {
                   <div>
                     <strong>Log storage</strong>
                     <div className="panel-description">
-                      JSON-based persistent storage
+                      JSON-based storage
                     </div>
                   </div>
                   <span className="status">Enabled</span>
